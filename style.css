@@ -108,10 +108,11 @@ background:linear-gradient(135deg,#1565c0,#00838f);
 .mongodb{
 background:linear-gradient(135deg,#4caf50,#1b5e20);
 }
-
 .aws{
-background:linear-gradient(135deg,#ff9800,#ff6f00);
+    background: linear-gradient(135deg, #232F3E, #37475A);
+    border-top: 5px solid #FF9900;
 }
+
 
 .gcp{
 background:linear-gradient(135deg,#4285F4,#34A853);
