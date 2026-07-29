@@ -18,6 +18,34 @@
     scroll-behavior:smooth;
 
 }
+/* Project Cards Background Match Tech Stack */
+
+#projects article{
+
+    background:#161b22;
+
+    border:1px solid #30363d;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.35);
+
+}
+
+
+#projects article:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#00d9ff;
+
+    box-shadow:0 15px 35px rgba(0,217,255,.25);
+
+}
 
 /* ===========================
         PROJECT SECTION
