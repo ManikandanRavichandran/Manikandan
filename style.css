@@ -18,7 +18,35 @@
     scroll-behavior:smooth;
 
 }
+#skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 0;
+}
 
+#skills li {
+    list-style: none;
+    background: rgba(255,255,255,0.1);
+    padding: 15px 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+#skills li:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.2);
+}
+
+#skills i {
+    font-size: 28px;
+    color: #00eaff;
+    width: 35px;
+}
 
 
 body{
