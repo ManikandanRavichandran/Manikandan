@@ -50,162 +50,96 @@
         CONTACT SECTION
 =========================== */
 
-#contact .glass-card{
+/* CONTACT SECTION */
 
+#contact .glass-card {
 
-    background:
-    linear-gradient(
+    display:block !important;
+
+    background:linear-gradient(
         135deg,
-        rgba(16,185,129,0.18),
-        rgba(5,150,105,0.12)
-    );
+        #064e3b,
+        #065f46
+    ) !important;
 
-
-    backdrop-filter:blur(20px);
-
-
-    border:1px solid rgba(16,185,129,0.35);
-
+    border:2px solid #34d399 !important;
 
     border-radius:25px;
 
-
     padding:40px;
 
+    color:white;
 
     box-shadow:
-    0 20px 40px rgba(16,185,129,0.15);
-
-
-    transition:.4s;
-
+    0 15px 40px rgba(52,211,153,0.3);
 
 }
 
 
+#contact .glass-card p {
 
-#contact .glass-card:hover{
-
-
-    transform:translateY(-8px);
-
-
-    border-color:#34d399;
-
-
-    box-shadow:
-    0 25px 50px rgba(52,211,153,0.35);
-
-
-}
-
-
-
-#contact p{
-
-
-    color:#e2e8f0;
+    color:white !important;
 
     font-size:18px;
 
     margin:20px 0;
 
-    display:flex;
+}
 
-    align-items:center;
 
-    gap:15px;
+#contact .glass-card i {
 
+    color:#34d399 !important;
+
+    font-size:22px;
 
 }
 
 
+#contact .glass-card a {
 
-#contact i{
-
-
-    color:#34d399;
-
-    font-size:24px;
-
-
-}
-
-
-
-#contact a{
-
-
-    color:#38bdf8;
-
-    text-decoration:none;
-
-    font-weight:600;
-
-
-}
-
-
-
-#contact a:hover{
-
-
-    color:#ffffff;
-
+    color:#38bdf8 !important;
 
 }
 
 /* ===========================
         ABOUT SECTION
 =========================== */
+/* ABOUT SECTION */
 
-#about .glass-card{
+#about .glass-card {
 
-    background:
-    linear-gradient(
+    display:block !important;
+
+    background:linear-gradient(
         135deg,
-        rgba(0, 217, 255, 0.15),
-        rgba(37, 99, 235, 0.15)
-    );
+        #0f172a,
+        #164e63
+    ) !important;
 
-    backdrop-filter:blur(20px);
-
-    border:1px solid rgba(0,217,255,0.35);
+    border:2px solid #00eaff !important;
 
     border-radius:25px;
 
     padding:40px;
 
-    box-shadow:
-    0 20px 40px rgba(0,217,255,0.15);
+    color:white;
 
-    transition:.4s;
+    box-shadow:
+    0 15px 40px rgba(0,234,255,0.3);
 
 }
 
 
-#about .glass-card:hover{
+#about .glass-card p {
 
-    transform:translateY(-8px);
-
-    border-color:#00eaff;
-
-    box-shadow:
-    0 25px 50px rgba(0,234,255,0.35);
-
-}
-
-
-#about p{
-
-    color:#e2e8f0;
+    color:#ffffff !important;
 
     font-size:18px;
 
-    line-height:1.9;
+    line-height:1.8;
 
 }
-
 /* ===========================
         PROJECT SECTION
 =========================== */
