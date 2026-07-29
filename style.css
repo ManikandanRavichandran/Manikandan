@@ -21,43 +21,157 @@
 /* ===========================
    TECH STACK
 =========================== */
-
 .tech-stack{
+
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-    gap:20px;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:22px;
     margin-top:40px;
+
 }
 
 .tech-card{
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.15);
-    backdrop-filter:blur(15px);
+
+    padding:25px 20px;
     border-radius:18px;
-    padding:25px 15px;
     text-align:center;
+    color:#fff;
     transition:.35s;
     cursor:pointer;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
 }
 
 .tech-card:hover{
-    transform:translateY(-8px);
-    box-shadow:0 15px 35px rgba(0,255,255,.25);
-    border-color:#00d9ff;
+
+    transform:translateY(-8px) scale(1.05);
+
 }
 
 .tech-card i{
+
     font-size:55px;
     margin-bottom:15px;
+
 }
 
 .tech-card span{
+
     display:block;
     font-size:17px;
     font-weight:600;
-    color:#fff;
+
 }
 
+/* ------------------------------
+   Individual Technology Colors
+--------------------------------*/
+
+.java{
+background:linear-gradient(135deg,#ff9800,#ff5722);
+}
+
+.spring{
+background:linear-gradient(135deg,#43a047,#2e7d32);
+}
+
+.react{
+background:linear-gradient(135deg,#00bcd4,#0288d1);
+}
+
+.javascript{
+background:linear-gradient(135deg,#fdd835,#f9a825);
+color:#222;
+}
+
+.javascript span{
+color:#222;
+}
+
+.html{
+background:linear-gradient(135deg,#ff7043,#e64a19);
+}
+
+.css{
+background:linear-gradient(135deg,#42a5f5,#1565c0);
+}
+
+.mysql{
+background:linear-gradient(135deg,#1565c0,#00838f);
+}
+
+.mongodb{
+background:linear-gradient(135deg,#4caf50,#1b5e20);
+}
+
+.aws{
+background:linear-gradient(135deg,#ff9800,#ff6f00);
+}
+
+.gcp{
+background:linear-gradient(135deg,#4285F4,#34A853);
+}
+
+.docker{
+background:linear-gradient(135deg,#42a5f5,#1e88e5);
+}
+
+.git{
+background:linear-gradient(135deg,#ff7043,#d84315);
+}
+
+.github{
+background:linear-gradient(135deg,#424242,#000000);
+}
+
+.microservices{
+background:linear-gradient(135deg,#7e57c2,#512da8);
+}
+
+.api{
+background:linear-gradient(135deg,#26c6da,#00838f);
+}
+
+.ml{
+background:linear-gradient(135deg,#ec407a,#ad1457);
+}
+
+.dl{
+background:linear-gradient(135deg,#ab47bc,#6a1b9a);
+}
+
+.llm{
+background:linear-gradient(135deg,#26a69a,#00695c);
+}
+
+.rag{
+background:linear-gradient(135deg,#29b6f6,#0277bd);
+}
+
+.prompt{
+background:linear-gradient(135deg,#ffca28,#f57f17);
+color:#222;
+}
+
+.prompt span{
+color:#222;
+}
+
+.ai{
+background:linear-gradient(135deg,#ef5350,#c62828);
+}
+
+.cursor{
+background:linear-gradient(135deg,#5c6bc0,#283593);
+}
+
+.windsurf{
+background:linear-gradient(135deg,#26c6da,#006064);
+}
+
+.javafx{
+background:linear-gradient(135deg,#8d6e63,#4e342e);
+}
 
 #skills ul {
     display: grid;
