@@ -18,6 +18,245 @@
     scroll-behavior:smooth;
 
 }
+
+/* ===========================
+        PROJECT SECTION
+=========================== */
+
+
+#projects{
+
+    padding:80px 10%;
+
+}
+
+
+
+#projects h2{
+
+    text-align:center;
+    font-size:38px;
+    margin-bottom:50px;
+
+}
+
+
+
+.projects-container{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+
+}
+
+
+
+
+.project-card{
+
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    border-radius:25px;
+
+    padding:35px;
+
+    transition:.4s;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+
+.project-card:hover{
+
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 20px 40px rgba(0,217,255,.25);
+
+    border-color:#00d9ff;
+
+}
+
+
+
+
+.project-icon{
+
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+    linear-gradient(135deg,#00c6ff,#0072ff);
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+.project-icon i{
+
+    font-size:35px;
+
+    color:white;
+
+}
+
+
+
+
+
+.project-icon.cloud{
+
+    background:
+    linear-gradient(135deg,#ff9800,#ff5722);
+
+}
+
+
+
+.project-icon.defence{
+
+    background:
+    linear-gradient(135deg,#673ab7,#311b92);
+
+}
+
+
+
+.project-icon.ai-project{
+
+    background:
+    linear-gradient(135deg,#00c853,#00695c);
+
+}
+
+
+
+
+.project-card h3{
+
+    color:white;
+
+    font-size:25px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+.project-client{
+
+    color:#00eaff;
+
+    font-weight:600;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.project-client i{
+
+    margin-right:8px;
+
+}
+
+
+
+
+
+.project-card p{
+
+
+    color:#d1d5db;
+
+    line-height:1.7;
+
+    min-height:90px;
+
+}
+
+
+
+
+.tech-tags{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+
+
+.tech-tags span{
+
+
+    background:#1e293b;
+
+    border:1px solid #334155;
+
+    color:#38bdf8;
+
+    padding:8px 15px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+
+
+
+/* Mobile Responsive */
+
+
+@media(max-width:900px){
+
+
+    .projects-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
+
 /* ===========================
    TECH STACK
 =========================== */
