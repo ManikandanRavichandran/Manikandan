@@ -111,6 +111,7 @@ background:linear-gradient(135deg,#4caf50,#1b5e20);
 .aws{
     background: linear-gradient(135deg, #232F3E, #37475A);
     border-top: 5px solid #FF9900;
+    color:#222;
 }
 
 
