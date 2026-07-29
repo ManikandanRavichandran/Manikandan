@@ -23,7 +23,169 @@
         PROJECT SECTION
 =========================== */
 
+.project-wrapper{
 
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+
+}
+
+
+.project-box{
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    padding:30px;
+
+    border:1px solid rgba(255,255,255,.15);
+
+    transition:.4s;
+
+}
+
+
+.project-box:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#00eaff;
+
+    box-shadow:0 15px 35px rgba(0,234,255,.25);
+
+}
+
+
+
+.project-title{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:20px;
+
+}
+
+
+.project-title i{
+
+    font-size:35px;
+
+    color:#00eaff;
+
+}
+
+
+
+.cloud-title i{
+
+    color:#ff9800;
+
+}
+
+
+.defence-title i{
+
+    color:#9c27b0;
+
+}
+
+
+.ai-title i{
+
+    color:#00c853;
+
+}
+
+
+.project-title h3{
+
+    color:white;
+
+    font-size:22px;
+
+}
+
+
+
+.project-details p{
+
+    color:#d1d5db;
+
+    margin:8px 0;
+
+}
+
+
+.project-details i{
+
+    color:#00eaff;
+
+    margin-right:8px;
+
+}
+
+
+
+.project-box > p{
+
+    color:#cbd5e1;
+
+    line-height:1.7;
+
+    margin-top:20px;
+
+}
+
+
+
+.stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-top:20px;
+
+}
+
+
+.stack span{
+
+    background:#0f172a;
+
+    color:#38bdf8;
+
+    padding:7px 14px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    border:1px solid #334155;
+
+}
+
+
+
+@media(max-width:900px){
+
+    .project-wrapper{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
 #projects{
 
     padding:80px 10%;
