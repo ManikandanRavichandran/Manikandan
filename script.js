@@ -1,7 +1,6 @@
-```javascript
-// =========================================================
-// SMOOTH SCROLLING FOR NAVIGATION LINKS
-// =========================================================
+// =====================================================
+// SMOOTH SCROLLING
+// =====================================================
 
 document.querySelectorAll("nav a").forEach(link => {
 
@@ -26,33 +25,44 @@ document.querySelectorAll("nav a").forEach(link => {
 });
 
 
-// =========================================================
+// =====================================================
 // WELCOME MESSAGE
-// =========================================================
+// =====================================================
 
 console.log(
     "Welcome to Manikandan's Portfolio Website"
 );
 
 
-// =========================================================
-// HIGHLIGHT NAVIGATION WHILE SCROLLING
-// =========================================================
+// =====================================================
+// NAVIGATION HIGHLIGHT
+// =====================================================
 
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll("nav ul li a");
+const sections =
+    document.querySelectorAll("section");
+
+const navLinks =
+    document.querySelectorAll("nav ul li a");
+
 
 window.addEventListener("scroll", () => {
 
     let current = "";
 
+
     sections.forEach(section => {
 
-        const sectionTop = section.offsetTop;
+        const sectionTop =
+            section.offsetTop;
 
-        if (window.pageYOffset >= sectionTop - 100) {
 
-            current = section.getAttribute("id");
+        if (
+            window.pageYOffset >=
+            sectionTop - 100
+        ) {
+
+            current =
+                section.getAttribute("id");
 
         }
 
@@ -63,8 +73,10 @@ window.addEventListener("scroll", () => {
 
         link.style.color = "white";
 
+
         if (
-            link.getAttribute("href") === "#" + current
+            link.getAttribute("href") ===
+            "#" + current
         ) {
 
             link.style.color = "#38bdf8";
@@ -76,15 +88,16 @@ window.addEventListener("scroll", () => {
 });
 
 
-// =========================================================
+// =====================================================
 // TECHNOLOGY DATA
-// =========================================================
+// =====================================================
 
 const techData = {
 
-    // -----------------------------------------------------
+
+    // =================================================
     // JAVA
-    // -----------------------------------------------------
+    // =================================================
 
     "Java": {
 
@@ -93,11 +106,15 @@ const techData = {
         projects: [
 
             {
-                name: "Data Acquisition System",
 
-                client: "ISRO Propulsion Complex (IPRC)",
+                name:
+                    "Data Acquisition System",
 
-                role: "Software Developer",
+                client:
+                    "ISRO Propulsion Complex (IPRC)",
+
+                role:
+                    "Software Developer",
 
                 usage: [
 
@@ -111,12 +128,17 @@ const techData = {
 
             },
 
+
             {
-                name: "Data Handling Software System",
 
-                client: "Bharat Electronics Limited",
+                name:
+                    "Data Handling Software System",
 
-                role: "Software Developer",
+                client:
+                    "Bharat Electronics Limited",
+
+                role:
+                    "Software Developer",
 
                 usage: [
 
@@ -135,22 +157,27 @@ const techData = {
     },
 
 
-    // -----------------------------------------------------
+    // =================================================
     // SPRING BOOT
-    // -----------------------------------------------------
+    // =================================================
 
     "Spring Boot": {
 
-        icon: "devicon-spring-plain",
+        icon:
+            "devicon-spring-plain",
 
         projects: [
 
             {
-                name: "Data Acquisition System",
 
-                client: "ISRO Propulsion Complex (IPRC)",
+                name:
+                    "Data Acquisition System",
 
-                role: "Software Developer",
+                client:
+                    "ISRO Propulsion Complex (IPRC)",
+
+                role:
+                    "Software Developer",
 
                 usage: [
 
@@ -164,12 +191,17 @@ const techData = {
 
             },
 
+
             {
-                name: "Burso Cost Allocation Application",
 
-                client: "MGT Consulting, USA",
+                name:
+                    "Burso Cost Allocation Application",
 
-                role: "Software Engineer",
+                client:
+                    "MGT Consulting, USA",
+
+                role:
+                    "Software Engineer",
 
                 usage: [
 
@@ -188,22 +220,27 @@ const techData = {
     },
 
 
-    // -----------------------------------------------------
+    // =================================================
     // REACT
-    // -----------------------------------------------------
+    // =================================================
 
     "React": {
 
-        icon: "devicon-react-original",
+        icon:
+            "devicon-react-original",
 
         projects: [
 
             {
-                name: "Data Acquisition System",
 
-                client: "ISRO Propulsion Complex (IPRC)",
+                name:
+                    "Data Acquisition System",
 
-                role: "Software Developer",
+                client:
+                    "ISRO Propulsion Complex (IPRC)",
+
+                role:
+                    "Software Developer",
 
                 usage: [
 
@@ -217,12 +254,17 @@ const techData = {
 
             },
 
+
             {
-                name: "Burso Cost Allocation Application",
 
-                client: "MGT Consulting, USA",
+                name:
+                    "Burso Cost Allocation Application",
 
-                role: "Software Engineer",
+                client:
+                    "MGT Consulting, USA",
+
+                role:
+                    "Software Engineer",
 
                 usage: [
 
@@ -241,22 +283,27 @@ const techData = {
     },
 
 
-    // -----------------------------------------------------
+    // =================================================
     // MYSQL
-    // -----------------------------------------------------
+    // =================================================
 
     "MySQL": {
 
-        icon: "devicon-mysql-original",
+        icon:
+            "devicon-mysql-original",
 
         projects: [
 
             {
-                name: "Data Acquisition System",
 
-                client: "ISRO Propulsion Complex (IPRC)",
+                name:
+                    "Data Acquisition System",
 
-                role: "Software Developer",
+                client:
+                    "ISRO Propulsion Complex (IPRC)",
+
+                role:
+                    "Software Developer",
 
                 usage: [
 
@@ -270,12 +317,17 @@ const techData = {
 
             },
 
+
             {
-                name: "Data Handling Software System",
 
-                client: "Bharat Electronics Limited",
+                name:
+                    "Data Handling Software System",
 
-                role: "Software Developer",
+                client:
+                    "Bharat Electronics Limited",
+
+                role:
+                    "Software Developer",
 
                 usage: [
 
@@ -294,22 +346,27 @@ const techData = {
     },
 
 
-    // -----------------------------------------------------
+    // =================================================
     // AWS
-    // -----------------------------------------------------
+    // =================================================
 
     "AWS": {
 
-        icon: "devicon-amazonwebservices-plain-wordmark",
+        icon:
+            "devicon-amazonwebservices-plain-wordmark",
 
         projects: [
 
             {
-                name: "Burso Cost Allocation Application",
 
-                client: "MGT Consulting, USA",
+                name:
+                    "Burso Cost Allocation Application",
 
-                role: "Software Engineer",
+                client:
+                    "MGT Consulting, USA",
+
+                role:
+                    "Software Engineer",
 
                 usage: [
 
@@ -323,12 +380,17 @@ const techData = {
 
             },
 
+
             {
-                name: "Burso AI ChatBot System",
 
-                client: "MGT Consulting, USA",
+                name:
+                    "Burso AI ChatBot System",
 
-                role: "AI Engineer / MLOps",
+                client:
+                    "MGT Consulting, USA",
+
+                role:
+                    "AI Engineer / MLOps",
 
                 usage: [
 
@@ -347,22 +409,27 @@ const techData = {
     },
 
 
-    // -----------------------------------------------------
+    // =================================================
     // MICROSERVICES
-    // -----------------------------------------------------
+    // =================================================
 
     "Microservices": {
 
-        icon: "fa-solid fa-cubes",
+        icon:
+            "fa-solid fa-cubes",
 
         projects: [
 
             {
-                name: "Burso Cost Allocation Application",
 
-                client: "MGT Consulting, USA",
+                name:
+                    "Burso Cost Allocation Application",
 
-                role: "Software Engineer",
+                client:
+                    "MGT Consulting, USA",
+
+                role:
+                    "Software Engineer",
 
                 usage: [
 
@@ -381,22 +448,27 @@ const techData = {
     },
 
 
-    // -----------------------------------------------------
+    // =================================================
     // JAVAFX
-    // -----------------------------------------------------
+    // =================================================
 
     "JavaFX": {
 
-        icon: "fa-solid fa-desktop",
+        icon:
+            "fa-solid fa-desktop",
 
         projects: [
 
             {
-                name: "Data Handling Software System",
 
-                client: "Bharat Electronics Limited",
+                name:
+                    "Data Handling Software System",
 
-                role: "Software Developer",
+                client:
+                    "Bharat Electronics Limited",
+
+                role:
+                    "Software Developer",
 
                 usage: [
 
@@ -415,22 +487,27 @@ const techData = {
     },
 
 
-    // -----------------------------------------------------
+    // =================================================
     // LLM
-    // -----------------------------------------------------
+    // =================================================
 
     "LLM": {
 
-        icon: "fa-solid fa-robot",
+        icon:
+            "fa-solid fa-robot",
 
         projects: [
 
             {
-                name: "Burso AI ChatBot System",
 
-                client: "MGT Consulting, USA",
+                name:
+                    "Burso AI ChatBot System",
 
-                role: "AI Engineer / MLOps",
+                client:
+                    "MGT Consulting, USA",
+
+                role:
+                    "AI Engineer / MLOps",
 
                 usage: [
 
@@ -449,22 +526,27 @@ const techData = {
     },
 
 
-    // -----------------------------------------------------
+    // =================================================
     // RAG CHATBOT
-    // -----------------------------------------------------
+    // =================================================
 
     "RAG ChatBot": {
 
-        icon: "fa-solid fa-comments",
+        icon:
+            "fa-solid fa-comments",
 
         projects: [
 
             {
-                name: "Burso AI ChatBot System",
 
-                client: "MGT Consulting, USA",
+                name:
+                    "Burso AI ChatBot System",
 
-                role: "AI Engineer / MLOps",
+                client:
+                    "MGT Consulting, USA",
+
+                role:
+                    "AI Engineer / MLOps",
 
                 usage: [
 
@@ -483,129 +565,154 @@ const techData = {
     },
 
 
-    // -----------------------------------------------------
+    // =================================================
     // OTHER TECHNOLOGIES
-    // -----------------------------------------------------
-    // These are present in your Tech Stack, but your current
-    // project descriptions don't specify where they were used.
-    // So we don't invent project information for them.
-    // -----------------------------------------------------
+    // =================================================
 
     "JavaScript": {
 
-        icon: "devicon-javascript-plain",
+        icon:
+            "devicon-javascript-plain",
 
         projects: []
 
     },
+
 
     "HTML5": {
 
-        icon: "devicon-html5-plain",
+        icon:
+            "devicon-html5-plain",
 
         projects: []
 
     },
+
 
     "CSS3": {
 
-        icon: "devicon-css3-plain",
+        icon:
+            "devicon-css3-plain",
 
         projects: []
 
     },
+
 
     "MongoDB": {
 
-        icon: "devicon-mongodb-plain",
+        icon:
+            "devicon-mongodb-plain",
 
         projects: []
 
     },
+
 
     "Google Cloud": {
 
-        icon: "devicon-googlecloud-plain",
+        icon:
+            "devicon-googlecloud-plain",
 
         projects: []
 
     },
+
 
     "Docker": {
 
-        icon: "devicon-docker-plain",
+        icon:
+            "devicon-docker-plain",
 
         projects: []
 
     },
+
 
     "Git": {
 
-        icon: "devicon-git-plain",
+        icon:
+            "devicon-git-plain",
 
         projects: []
 
     },
+
 
     "GitHub": {
 
-        icon: "devicon-github-original",
+        icon:
+            "devicon-github-original",
 
         projects: []
 
     },
+
 
     "REST APIs": {
 
-        icon: "fa-solid fa-network-wired",
+        icon:
+            "fa-solid fa-network-wired",
 
         projects: []
 
     },
+
 
     "Machine Learning": {
 
-        icon: "fa-solid fa-brain",
+        icon:
+            "fa-solid fa-brain",
 
         projects: []
 
     },
+
 
     "Deep Learning": {
 
-        icon: "fa-solid fa-diagram-project",
+        icon:
+            "fa-solid fa-diagram-project",
 
         projects: []
 
     },
+
 
     "Cursor AI": {
 
-        icon: "fa-solid fa-code",
+        icon:
+            "fa-solid fa-code",
 
         projects: []
 
     },
+
 
     "Artificial Intelligence": {
 
-        icon: "fa-solid fa-microchip",
+        icon:
+            "fa-solid fa-microchip",
 
         projects: []
 
     },
+
 
     "Prompt Engineering": {
 
-        icon: "fa-solid fa-wand-magic-sparkles",
+        icon:
+            "fa-solid fa-wand-magic-sparkles",
 
         projects: []
 
     },
 
+
     "Windsurf": {
 
-        icon: "fa-solid fa-wind",
+        icon:
+            "fa-solid fa-wind",
 
         projects: []
 
@@ -614,29 +721,46 @@ const techData = {
 };
 
 
-// =========================================================
+// =====================================================
 // SHOW TECHNOLOGY DETAILS
-// =========================================================
+// =====================================================
 
 function showTechDetails(technology) {
 
+
     const modal =
-        document.getElementById("techModal");
+        document.getElementById(
+            "techModal"
+        );
+
 
     const title =
-        document.getElementById("techModalTitle");
+        document.getElementById(
+            "techModalTitle"
+        );
+
 
     const subtitle =
-        document.getElementById("techModalSubtitle");
+        document.getElementById(
+            "techModalSubtitle"
+        );
+
 
     const projectsContainer =
-        document.getElementById("techProjects");
+        document.getElementById(
+            "techProjects"
+        );
+
 
     const iconContainer =
-        document.getElementById("techModalIcon");
+        document.getElementById(
+            "techModalIcon"
+        );
 
 
-    // Check whether modal exists
+    // -----------------------------------------------
+    // CHECK MODAL
+    // -----------------------------------------------
 
     if (!modal) {
 
@@ -649,21 +773,30 @@ function showTechDetails(technology) {
     }
 
 
-    const data = techData[technology];
+    // -----------------------------------------------
+    // GET TECHNOLOGY DATA
+    // -----------------------------------------------
+
+    const data =
+        techData[technology];
 
 
-    // -----------------------------------------------------
-    // SET TECHNOLOGY NAME
-    // -----------------------------------------------------
+    // -----------------------------------------------
+    // TECHNOLOGY TITLE
+    // -----------------------------------------------
 
-    title.textContent = technology;
+    title.textContent =
+        technology;
 
 
-    // -----------------------------------------------------
-    // SET TECHNOLOGY ICON
-    // -----------------------------------------------------
+    // -----------------------------------------------
+    // TECHNOLOGY ICON
+    // -----------------------------------------------
 
-    if (data && data.icon) {
+    if (
+        data &&
+        data.icon
+    ) {
 
         iconContainer.innerHTML =
             `<i class="${data.icon}"></i>`;
@@ -677,15 +810,16 @@ function showTechDetails(technology) {
     }
 
 
-    // -----------------------------------------------------
-    // IF NO PROJECT INFORMATION EXISTS
-    // -----------------------------------------------------
+    // -----------------------------------------------
+    // NO PROJECT INFORMATION
+    // -----------------------------------------------
 
     if (
         !data ||
         !data.projects ||
         data.projects.length === 0
     ) {
+
 
         subtitle.textContent =
             "Project usage information";
@@ -695,11 +829,15 @@ function showTechDetails(technology) {
 
             <div class="no-projects">
 
-                <i class="fa-solid fa-circle-info"></i>
+                <i
+                    class="fa-solid fa-circle-info">
+                </i>
 
                 <p>
-                    Project usage details have not
-                    been added yet.
+
+                    Project usage details
+                    have not been added yet.
+
                 </p>
 
             </div>
@@ -709,11 +847,12 @@ function showTechDetails(technology) {
     }
 
 
-    // -----------------------------------------------------
-    // IF PROJECT INFORMATION EXISTS
-    // -----------------------------------------------------
+    // -----------------------------------------------
+    // PROJECT INFORMATION EXISTS
+    // -----------------------------------------------
 
     else {
+
 
         subtitle.textContent =
             `Used in ${data.projects.length} project${
@@ -723,119 +862,139 @@ function showTechDetails(technology) {
             }`;
 
 
-        // Clear old project information
+        // Clear previous content
 
-        projectsContainer.innerHTML = "";
-
-
-        // Create project cards
-
-        data.projects.forEach(project => {
+        projectsContainer.innerHTML =
+            "";
 
 
-            // Create usage list
+        // -------------------------------------------
+        // CREATE PROJECT CARDS
+        // -------------------------------------------
 
-            const usageList =
-                project.usage
-                    .map(item => {
-
-                        return `<li>${item}</li>`;
-
-                    })
-                    .join("");
+        data.projects.forEach(
+            project => {
 
 
-            // Add project card
+                // Create usage list
 
-            projectsContainer.innerHTML += `
+                const usageList =
+                    project.usage
+                        .map(
+                            item =>
+                                `<li>${item}</li>`
+                        )
+                        .join("");
 
-                <div class="tech-project-card">
+
+                // Add project card
+
+                projectsContainer.innerHTML += `
+
+                    <div
+                        class="tech-project-card">
 
 
-                    <!-- PROJECT TITLE -->
+                        <!-- PROJECT TITLE -->
 
-                    <div class="tech-project-title">
+                        <div
+                            class="tech-project-title">
 
-                        <i class="fa-solid fa-folder-open"></i>
+                            <i
+                                class="fa-solid fa-folder-open">
+                            </i>
 
-                        <h3>
-                            ${project.name}
-                        </h3>
+                            <h3>
+                                ${project.name}
+                            </h3>
+
+                        </div>
+
+
+                        <!-- PROJECT INFO -->
+
+                        <div
+                            class="tech-project-info">
+
+
+                            <p>
+
+                                <i
+                                    class="fa-solid fa-building">
+                                </i>
+
+                                <strong>
+                                    Client:
+                                </strong>
+
+                                ${project.client}
+
+                            </p>
+
+
+                            <p>
+
+                                <i
+                                    class="fa-solid fa-user">
+                                </i>
+
+                                <strong>
+                                    Role:
+                                </strong>
+
+                                ${project.role}
+
+                            </p>
+
+
+                        </div>
+
+
+                        <!-- USAGE -->
+
+                        <div
+                            class="tech-usage">
+
+
+                            <h4>
+
+                                <i
+                                    class="fa-solid fa-code">
+                                </i>
+
+                                How I Used It
+
+                            </h4>
+
+
+                            <ul>
+
+                                ${usageList}
+
+                            </ul>
+
+
+                        </div>
+
 
                     </div>
 
+                `;
 
-                    <!-- CLIENT AND ROLE -->
-
-                    <div class="tech-project-info">
-
-
-                        <p>
-
-                            <i class="fa-solid fa-building"></i>
-
-                            <strong>
-                                Client:
-                            </strong>
-
-                            ${project.client}
-
-                        </p>
-
-
-                        <p>
-
-                            <i class="fa-solid fa-user"></i>
-
-                            <strong>
-                                Role:
-                            </strong>
-
-                            ${project.role}
-
-                        </p>
-
-
-                    </div>
-
-
-                    <!-- HOW I USED IT -->
-
-                    <div class="tech-usage">
-
-                        <h4>
-
-                            <i class="fa-solid fa-code"></i>
-
-                            How I Used It
-
-                        </h4>
-
-
-                        <ul>
-
-                            ${usageList}
-
-                        </ul>
-
-
-                    </div>
-
-
-                </div>
-
-            `;
-
-        });
+            }
+        );
 
     }
 
 
-    // -----------------------------------------------------
+    // -----------------------------------------------
     // OPEN MODAL
-    // -----------------------------------------------------
+    // -----------------------------------------------
 
-    modal.classList.add("active");
+    modal.classList.add(
+        "active"
+    );
+
 
     modal.setAttribute(
         "aria-hidden",
@@ -845,19 +1004,23 @@ function showTechDetails(technology) {
 
     // Prevent background scrolling
 
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow =
+        "hidden";
 
 }
 
 
-// =========================================================
+// =====================================================
 // CLOSE TECHNOLOGY MODAL
-// =========================================================
+// =====================================================
 
 function closeTechModal() {
 
+
     const modal =
-        document.getElementById("techModal");
+        document.getElementById(
+            "techModal"
+        );
 
 
     if (!modal) {
@@ -867,7 +1030,9 @@ function closeTechModal() {
     }
 
 
-    modal.classList.remove("active");
+    modal.classList.remove(
+        "active"
+    );
 
 
     modal.setAttribute(
@@ -876,23 +1041,27 @@ function closeTechModal() {
     );
 
 
-    // Restore page scrolling
+    // Restore scrolling
 
-    document.body.style.overflow = "";
+    document.body.style.overflow =
+        "";
 
 }
 
 
-// =========================================================
-// CLOSE MODAL WHEN CLICKING OUTSIDE
-// =========================================================
+// =====================================================
+// CLOSE WHEN CLICKING OUTSIDE
+// =====================================================
 
 document.addEventListener(
     "click",
     function(event) {
 
+
         const modal =
-            document.getElementById("techModal");
+            document.getElementById(
+                "techModal"
+            );
 
 
         if (
@@ -908,15 +1077,18 @@ document.addEventListener(
 );
 
 
-// =========================================================
-// CLOSE MODAL USING ESC KEY
-// =========================================================
+// =====================================================
+// CLOSE WITH ESC KEY
+// =====================================================
 
 document.addEventListener(
     "keydown",
     function(event) {
 
-        if (event.key === "Escape") {
+
+        if (
+            event.key === "Escape"
+        ) {
 
             closeTechModal();
 
@@ -924,4 +1096,3 @@ document.addEventListener(
 
     }
 );
-```
