@@ -282,123 +282,123 @@ technology solutions that create business value.
 
     <div class="tech-stack">
 
-        <div class="tech-card java">
+        <div class="tech-card java" onclick="showTechDetails('Java')">
             <i class="devicon-java-plain"></i>
             <span>Java</span>
         </div>
 
-        <div class="tech-card spring">
+        <div class="tech-card spring" onclick="showTechDetails('Spring Boot')">
             <i class="devicon-spring-plain"></i>
             <span>Spring Boot</span>
         </div>
 
-        <div class="tech-card react">
+        <div class="tech-card react" onclick="showTechDetails('React')">
             <i class="devicon-react-original"></i>
             <span>React</span>
         </div>
 
-        <div class="tech-card javascript">
+        <div class="tech-card javascript" onclick="showTechDetails('JavaScript')">
             <i class="devicon-javascript-plain"></i>
             <span>JavaScript</span>
         </div>
 
-        <div class="tech-card html">
+        <div class="tech-card html" onclick="showTechDetails('HTML5')">
             <i class="devicon-html5-plain"></i>
             <span>HTML5</span>
         </div>
 
-        <div class="tech-card css">
+        <div class="tech-card css" onclick="showTechDetails('CSS3')">
             <i class="devicon-css3-plain"></i>
             <span>CSS3</span>
         </div>
 
-        <div class="tech-card mysql">
+        <div class="tech-card mysql" onclick="showTechDetails('MySQL')">
             <i class="devicon-mysql-original"></i>
             <span>MySQL</span>
         </div>
 
-        <div class="tech-card mongodb">
+        <div class="tech-card mongodb" onclick="showTechDetails('MongoDB')">
             <i class="devicon-mongodb-plain"></i>
             <span>MongoDB</span>
         </div>
 
-        <div class="tech-card">
+        <div class="tech-card aws" onclick="showTechDetails('AWS')">
             <i class="devicon-amazonwebservices-plain-wordmark"></i>
             <span>AWS</span>
         </div>
 
-        <div class="tech-card gcp">
+        <div class="tech-card gcp" onclick="showTechDetails('Google Cloud')">
             <i class="devicon-googlecloud-plain"></i>
             <span>Google Cloud</span>
         </div>
 
-        <div class="tech-card docker">
+        <div class="tech-card docker" onclick="showTechDetails('Docker')">
             <i class="devicon-docker-plain"></i>
             <span>Docker</span>
         </div>
 
-        <div class="tech-card git">
+        <div class="tech-card git" onclick="showTechDetails('Git')">
             <i class="devicon-git-plain"></i>
             <span>Git</span>
         </div>
 
-        <div class="tech-card github">
+        <div class="tech-card github" onclick="showTechDetails('GitHub')">
             <i class="devicon-github-original"></i>
             <span>GitHub</span>
         </div>
 
-        <div class="tech-card microservices">
+        <div class="tech-card microservices" onclick="showTechDetails('Microservices')">
             <i class="fa-solid fa-cubes"></i>
             <span>Microservices</span>
         </div>
 
-        <div class="tech-card api">
+        <div class="tech-card api" onclick="showTechDetails('REST APIs')">
             <i class="fa-solid fa-network-wired"></i>
             <span>REST APIs</span>
         </div>
 
-        <div class="tech-card ml">
+        <div class="tech-card ml" onclick="showTechDetails('Machine Learning')">
             <i class="fa-solid fa-brain"></i>
             <span>Machine Learning</span>
         </div>
 
-        <div class="tech-card dl">
+        <div class="tech-card dl" onclick="showTechDetails('Deep Learning')">
             <i class="fa-solid fa-diagram-project"></i>
             <span>Deep Learning</span>
         </div>
 
-        <div class="tech-card llm">
+        <div class="tech-card llm" onclick="showTechDetails('LLM')">
             <i class="fa-solid fa-robot"></i>
             <span>LLM</span>
         </div>
 
-        <div class="tech-card rag">
+        <div class="tech-card rag" onclick="showTechDetails('RAG ChatBot')">
             <i class="fa-solid fa-comments"></i>
             <span>RAG ChatBot</span>
         </div>
 
         
-        <div class="tech-card cursor">
+        <div class="tech-card cursor" onclick="showTechDetails('Cursor AI')">
             <i class="fa-solid fa-code"></i>
             <span>Cursor AI</span>
         </div>
 
-        <div class="tech-card ai">
+        <div class="tech-card ai" onclick="showTechDetails('Artificial Intelligence')">
             <i class="fa-solid fa-microchip"></i>
             <span>Artificial Intelligence</span>
         </div>
 
-        <div class="tech-card prompt">
+        <div class="tech-card prompt" onclick="showTechDetails('Prompt Engineering')">
             <i class="fa-solid fa-wand-magic-sparkles"></i>
             <span>Prompt Engineering</span>
         </div>
 
-        <div class="tech-card windsurf">
+        <div class="tech-card windsurf" onclick="showTechDetails('Windsurf')">
             <i class="fa-solid fa-wind"></i>
             <span>Windsurf</span>
         </div>
 
-        <div class="tech-card javafx">
+        <div class="tech-card javafx" onclick="showTechDetails('JavaFX')">
             <i class="fa-solid fa-desktop"></i>
             <span>JavaFX</span>
         </div>
@@ -797,6 +797,42 @@ Built using HTML, CSS & JavaScript
 </footer>
 
 
+
+
+<!-- =========================================================
+     TECHNOLOGY DETAILS MODAL
+========================================================= -->
+
+<div id="techModal" class="tech-modal" aria-hidden="true">
+
+    <div class="tech-modal-content" role="dialog" aria-modal="true" aria-labelledby="techModalTitle">
+
+        <button
+            type="button"
+            class="tech-modal-close"
+            onclick="closeTechModal()"
+            aria-label="Close technology details">
+            &times;
+        </button>
+
+        <div class="tech-modal-header">
+
+            <div id="techModalIcon" class="tech-modal-icon">
+                <i class="fa-solid fa-code"></i>
+            </div>
+
+            <div>
+                <h2 id="techModalTitle">Technology</h2>
+                <p id="techModalSubtitle">Where I have used this technology</p>
+            </div>
+
+        </div>
+
+        <div id="techProjects" class="tech-projects"></div>
+
+    </div>
+
+</div>
 
 <script src="script.js"></script>
 
